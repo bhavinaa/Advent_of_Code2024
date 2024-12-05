@@ -38,46 +38,26 @@ def check_gradient(lst):
 
 
 def get_inc(lst):
-    badc = 0
-    v3 = None
     for i in range(0, len(lst) - 1):
         v1 = int(lst[i])
         v2 = int(lst[i + 1])
 
         if i == v3:
             continue
-        
-        
         if  (0 < v2 - v1 <= 3):
             continue
-        if v1 >= v2:
-            if badc < 1:
-                v3 = i + 1
-                if (0 < int(lst[v3]) - v1 <=3):
-                    badc = 1
-                    continue
-            return 0
         else:
             return 0
     return 1
 
 def get_dec(lst):
-    badc = 0 
-    v3 = None
+  
     for i in range(0, len(lst) - 1):
         v1 = int(lst[i])
         v2 = int(lst[i + 1])
         
         if  0 < v1 - v2 <= 3:
             continue
-        if v2 >= v1:
-            if badc < 1:
-                v3 = i + 1
-                if (0 < v1 - int(lst[v3])  <=3):
-                    badc = 1
-                    continue
-                else:
-                    return 0
         else:
              return 0
     return 1
@@ -93,8 +73,7 @@ def check_reports(lsts, value):
             value += get_inc(i)
 
     return value
-
-
+    
 count_safe = check_reports(rows, 0)
 print("count safe: " + str(count_safe))
             
