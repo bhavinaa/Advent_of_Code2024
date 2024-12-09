@@ -1,5 +1,15 @@
 # you have to read the data line by line
 # you have to read it line by line and then you have to read the input ch
+# was confused, learnt about chatgpt to help with patternmatching. it was incapable fof figuring out the pttern for me
+"""
+you need to be able to identify the pattern in smaller chunks you can process
+realise it is an extension of the previous part
+
+think what do you have to do to make the question like the previous part
+what do you have to modify 
+
+this is the process of divide and conquer and breaking down the problem
+"""
 
 import re
 # package to help with pattern matching
